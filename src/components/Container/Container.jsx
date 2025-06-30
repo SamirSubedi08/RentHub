@@ -1,13 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
-import style from './Container.module.css'
+import Skeleton from '../Skeleton/Skeleton'; // skeleton component
+import ContentCards from '../ContentCards/ContentCards';
 
-function Container() {
+
+const Container = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate API call or content load
+    const timer = setTimeout(() => {
+              setIsLoading(false);
+    }, 2000); // Show skeleton for 2 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className={style.container}>
-        <div className={style.main_container}></div>
+    <div >
+      {isLoading ? (
+        <>
+          <Skeleton />
+        </>
+      ) : (
+         <div style={{ padding: '20px', textAlign: 'center',backgroundColor:'gray', height:'100%', borderRadius:'10px',margin:'5px' }}></div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Container
+export default Container;

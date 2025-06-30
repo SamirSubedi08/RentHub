@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import Skeleton from '../Skeleton/Skeleton'; // your skeleton component
-import RoomCard from '../RoomsCard/RoomCard';
+import Skeleton from '../Skeleton/Skeleton'; // skeleton component
+import ContentCards from '../ContentCards/ContentCards';
 
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
           <Skeleton />
         </>
       ) : (
-        <RoomCard />
+        <ContentCards />
       )}
     </div>
   );
