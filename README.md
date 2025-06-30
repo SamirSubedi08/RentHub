@@ -29,3 +29,24 @@ RentHub is a modern web application built using React that helps users find and 
    ```bash
    git clone https://github.com/SamirSubedi08/RentHub.git
    cd RentHub
+2. Install dependencies:
+npm install
+
+3. Run the development server:
+4. npm start / npx vite
+
+PROJECT STRUCTURE:
+
+RentHub/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── index.js
+├── package.json
+└── tailwind.config.js
+
+Author
+Samir Subedi
+GitHub: github.com/SamirSubedi08
