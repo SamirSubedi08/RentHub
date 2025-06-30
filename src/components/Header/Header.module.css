@@ -1,0 +1,94 @@
+
+.header {
+  
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(68, 240, 68);
+    background-color: rgb(250, 246, 246);
+    max-width: 100%;
+    gap: 5px;
+    padding: 0px 5px;
+  }
+
+  .h1{
+    
+    color: rgb(68, 240, 68);
+    text-decoration: none;
+    width: fit-content;
+    font-size: 30px;
+
+  }
+  
+
+  .search_box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    gap: 5px;
+    
+    
+  }
+
+  .searchBox {
+    display: flex;  
+    border: none;
+    background-color: rgb(238, 236, 233);
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    width: 35rem;
+    text-align: start;
+    height: 35px;
+  }
+  
+  .profile {
+  
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: fit-content;
+    border-style: solid;
+    border-radius: 200px;
+    overflow: hidden;
+  }
+  
+  .profile img {
+  
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    
+  }
+  
+  .profile:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width:768px) {
+    .header{
+      justify-content: center;
+      width: 100%;
+      position: sticky;
+    }
+    .title{
+      display: block;
+      
+
+    }
+    h1{
+      width: fit-content;
+    }
+    
+    .searchBox{
+      width: 100px;
+
+    }
+    
+  }

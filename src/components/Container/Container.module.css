@@ -1,0 +1,20 @@
+.container{
+    
+    width: 100%;
+    height: 100%;
+    border:none;
+    padding: 5px;
+}
+
+.main_container{
+    width: 100%;
+    height: 100%;
+    background: #635c5c;
+    border:none;
+    box-shadow: 0px 0px 1px ;
+}
+@media (max-width:768px) {
+    .container{
+        display: none;
+    }   
+}

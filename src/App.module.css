@@ -1,0 +1,168 @@
+
+
+.app {
+  font-family: 'Jost', sans-serif;
+  height: 100vh;
+  background-color: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+
+:root {
+  background:#f0f0f0;
+}
+.grid_container {
+  margin-top: 1px;
+  display: grid;
+  grid-template-columns: 290px 5px 1.2fr 1fr ;
+  height: calc(100vh - 60px);
+  gap: 5px;
+  background-color: #f0f0f0;
+}
+
+.horizontal_line {
+  width: 2px;
+  background-color: rgb(212, 212, 212);
+}
+.right_aside {
+    display: flex;
+    
+  
+  }
+  .right_aside::-webkit-scrollbar{
+    display: none;
+  }
+    
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content;
+    background-color: transparent;
+    padding: 10px;
+    gap: 1px;
+    box-sizing: border-box;
+    
+  }
+  
+
+.skeleton_card {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgb(201, 195, 195);
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton_profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skeleton_avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #e0e0e0;
+}
+
+.skeleton_username {
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+  background: #e0e0e0;
+}
+
+.skeleton_description {
+  width: 80%;
+  height: 15px;
+  border-radius: 5px;
+  background: #e0e0e0;
+}
+
+.skeleton_image {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  background: #e0e0e0;
+}
+
+.skeleton_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skeleton_btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #e0e0e0;
+}
+
+/* Shimmer animation */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, #f0f0f0 50%, transparent 100%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+@media (max-width:768px) {
+  .header{
+    justify-content: center;
+    width: 100px;
+  }
+  
+  .grid_container{
+    max-width: 100%;
+    grid-template-columns: auto;
+    flex-direction:column;
+    height: auto;
+    gap: 1px;
+  }
+  
+  
+
+  
+}
+

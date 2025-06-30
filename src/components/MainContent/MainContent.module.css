@@ -1,0 +1,13 @@
+.grid_container {
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 290px 5px 1fr 1fr;
+    height: calc(100vh - 60px);
+    gap: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .horizontal_line {
+    width: 2px;
+    background-color: rgb(212, 212, 212);
+  }
